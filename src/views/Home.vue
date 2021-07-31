@@ -75,14 +75,14 @@ export default {
 <style scoped>
 
 h2 span.typed-text{
-  color: #e6baaa;
+  color: #ff0505;
 }
 
 h2 span.cursor{
   display: inline-block;
   margin-left: 3px;
   width: 4px;
-  background-color: #000;
+  background-color: #ff0505;
   animation: cursor 0.6s infinite;
 }
 
@@ -91,7 +91,7 @@ h2 span.cursor.typing{
 }
 
 @keyframes cursor {
-  49%{background-color: #000;}
+  49%{background-color: #ff0505;}
   50%{background-color: transparent;}
   99%{background-color: transparent;}
 }
@@ -103,11 +103,13 @@ h2 span.cursor.typing{
 }
 .home {
   margin-left: 13.63rem;
-  background-image: url("../assets/homeimg2.gif");
+  background-image: url("../assets/background.jpg");
   width: 84%;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   background-position: center;
+  object-fit: cover;
   height: 100vh;
   overflow: hidden;
   /* background-size: cover; */

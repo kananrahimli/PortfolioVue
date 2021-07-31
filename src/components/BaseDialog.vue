@@ -1,13 +1,18 @@
 <template>
   <teleport to="body">
-    <div  class="backdrop"></div>
+    <div  class="backdrop" @click="close"></div>
     
   </teleport>
 </template>
 
 <script>
 export default {
-
+  emits:['close'],
+  methods:{
+    close(){
+      this.$emit('closeBackdrop')
+    }
+  }
 };
 </script>
 

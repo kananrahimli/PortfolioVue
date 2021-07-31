@@ -1,5 +1,6 @@
 <template>
   <div>
+    <base-dialog v-if="menuBar" @closeBackdrop="close"></base-dialog>
     <button class="menubar" @click="openMenu">
       <i class="fas fa-bars "></i>
     </button>
@@ -62,6 +63,9 @@ export default {
     deactivate() {
       this.menuBar = false;
     },
+    close(){
+      this.menuBar=false
+    }
   },
 };
 </script>

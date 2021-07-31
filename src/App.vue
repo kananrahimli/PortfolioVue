@@ -45,6 +45,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
+
+  
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ff7f50;
+    border: 1px;
+    border-radius: 10px;
 }
 
 * {

@@ -1,77 +1,158 @@
 <template>
-<base-container class="pt-5">
-<base-title title="Contact" ></base-title>
-<div id="contact" class="container mt-5">
-     
-          <div class="row">
-            <div class="col-md-6 info" >
-              <span class="questionTitle" style="font-size: 1.2rem;"><strong> Do you have a question?</strong> </span><br><br>
+  <base-container class="pt-5">
+    <base-title title="Contact"></base-title>
 
-              <i class="fas fa-phone  mr-3 mt-3 " ></i>
-              <span>+994556085532</span>
-              <br>
-              <i class="fas fa-envelope  mr-3 mt-3 " ></i>
-              <span>kenanrehimli48@gmail.com</span>
-              <br>
-              <i class="fas fa-map-marker-alt  mr-3 mt-3 "></i>
-              <span>Baku,Bayil</span>
-            </div>
-            <div class="col-md-6 ">
-              <form action="">
-                <span  style="font-size: 1.5rem; display: block; " class="message mb-2"><strong>Message me</strong></span>
-                  <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                          
-                          <input type="text" name="name" id="name" class="form-control" required placeholder="Name">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-        
-                        <input type="email" name="name" id="name" class="form-control" required placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" name="name" id="name" class="form-control" required placeholder="Subject">
-                      </div>
-                    </div>
+    <div
+      id="contact"
+      class="d-flex flex-column align-items-center py-3 px-0 container mb-4"
+    >
+      <div class="my-3">
+        <base-title text1="Contact" text2="us"></base-title>
+      </div>
+      <div class="form my-5 row px-md-2">
+        <div class="col-md-4 d-flex flex-column justify-content-around">
+          <div class="py-5">
+            <p>
+              <strong class="ml-0  ml-md-0"
+                ><span class="questionTitle" style="font-size: 1.2rem"
+                  ><strong> Do you have a question?</strong> </span
+                ><br /><br />
 
-                    <div class="col-md-12">
-                      <div class="form-group">
-                        <textarea name="" id="" cols="15" rows="5" required placeholder="Message.." class="form-control"></textarea>
-                      </div>
-                    </div>
-                    <button class="btn btn-outline-success ml-3" type="submit" id="submit">Send</button>
-                  </div>
-              </form>
-                  
-            </div>
+                <i class="fas fa-phone mr-3 mt-3"></i>
+                <span>+994556085532</span>
+                <br />
+                <i class="fas fa-envelope mr-3 mt-3"></i>
+                <span>kenanrehimli48@gmail.com</span>
+                <br />
+                <i class="fas fa-map-marker-alt mr-3 mt-3"></i>
+                <span>Baku,Bayil</span></strong
+              >
+            </p>
           </div>
-</div>
-</base-container>
-  
+          <div class="d-flex justify-content-around px-5">
+            <a href="https://www.facebook.com/profile.php?id=100005356844995">
+              <i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://github.com/kananrahimli">
+              <i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kanan-rahimli-44b703176/">
+              <i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="
+            col-md-8
+            d-flex
+            flex-column
+            p-4 p-md-5
+            align-items-center
+            justify-content-around
+          "
+        >
+          <input
+            type="text"
+            class="w-100 mt-4"
+            name=""
+            placeholder="Name"
+            id=""
+            v-model="name"
+          />
+          <input
+            type="text"
+            class="w-100 my-3"
+            placeholder="Email"
+            name=""
+            id=""
+            v-model="email"
+          />
+          <textarea
+            name=""
+            id=""
+            placeholder="Message"
+            rows="6"
+            class="w-100"
+            v-model="message"
+          ></textarea>
+          <button
+            class="btn btn-outline-success mt-4"
+            type="submit"
+            id="submit"
+            @click="send"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </base-container>
 </template>
 
 <script>
+import axios from 'axios'
 export default {
+    data(){
+        return{
+            email:'',
+            message:'',
+            name:''
+        }
+    },
 
-}
+    methods:{
+        send(){
+            axios.post('https://portfolio-e44ea-default-rtdb.firebaseio.com/users.json',{
+                name:this.name,
+                email:this.email,
+                message:this.message
+            }).then(()=>{
+                
+                this.name='',
+                this.email='',
+                this.message=''
+                alert('Mesajiniz ugurla gonderildi')
+            }).catch((err)=>{
+                console.log(err);
+            })
+        }
+    }
+};
 </script>
 
 <style scoped>
-      #contact{
-      padding: 5rem 1rem 0rem;
-     }
-    #contact i{
-      color:#ff7f50 ;
-    }
+#contact i {
+  color: #ff7f50;
+}
 
-    @media screen and (max-width: 768px){
-         #contact .info{
-        margin-bottom: 3rem;
-        
-      }     
-    }
+.form {
+  border: 1px solid #f8f8f8;
+  background: #f5f4f4;
+  width: 80%;
+}
+
+a {
+  text-decoration: none;
+  color: #2f2f30;
+  font-size: 1.5rem;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #2f2f30;
+  background: transparent;
+  outline: none;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
 </style>
