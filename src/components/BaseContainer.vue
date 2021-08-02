@@ -48,5 +48,9 @@ export default {
     margin-left: 0;
     width: 100% !important;
   }
+  .base-container-2 {
+    margin-left: 0;
+    width: 100% !important;
+  }
 }
 </style>
