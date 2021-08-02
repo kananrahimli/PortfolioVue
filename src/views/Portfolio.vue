@@ -1,6 +1,6 @@
 <template>
-  <base-container >
-        <base-title title="Portfolio" class="mb-2"></base-title>
+  <base-container bgNoWhite >
+        <base-title title="Portfolio" class="mb-2" ></base-title>
     <div id="portfolio" class=" container ml-1 row justify-content-center " >
       <div class="customCard pb-3 col-md-3 mx-3 my-5  d-flex flex-column " v-for="(project,index) in projects" :key="index">
         <div class="imgBox text-center ">
@@ -8,7 +8,7 @@
         </div>
         <div class="content ">
           <h3 class="font-weight-bold">{{project.projectName}}</h3>
-          <p class="my-4 "><span class="font-weight-bold "> Used technology and tools:</span> {{project.projectContent}}</p>
+          <p class="my-4 "><span class="font-weight-bold text-info "> Used technology and tools:</span> {{project.projectContent}}</p>
 
           <div class="actions   d-flex justify-content-around">
             <button  ><a :href="project.demo" target="_blank" class="text-decoration-none ">See project</a> </button>
@@ -108,6 +108,7 @@ export default {
 <style scoped>
 #portfolio{
   padding-bottom: 120px;
+  
 }
 button{
   width: 110px;
@@ -135,7 +136,8 @@ button:hover a{
 
 .container .customCard{
   height: 180px;
-   background-color: #eaeaea;
+   background-color: #fff;
+   border: 1px solid #ff7f50;
   transition: 0.3s ease-in-out;
   border-radius: 4px;
   box-shadow: 0 5px 202px rgba(0,0,0,0,0.5);

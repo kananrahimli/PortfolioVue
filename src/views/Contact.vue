@@ -144,6 +144,17 @@ textarea {
   background: transparent;
   outline: none;
   padding: 10px 0px;
+  
+}
+
+input:focus,
+textarea:focus{
+
+   border: none;
+  border-bottom: 1px solid #ff7f50;
+  background: transparent;
+  outline: none;
+  padding: 10px 0px;
 }
 
 @media screen and (max-width: 768px) {

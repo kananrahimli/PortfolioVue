@@ -171,7 +171,19 @@ export default {};
   background-color: #ff7f50;
   color: black;
   height: 12px;
-  animation: animate 0.5s linear;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s;
+}
+@keyframes animate {
+  0%{
+    width: 0%;
+  }
+  50%{
+    width: 50%;
+  }
+  100%{
+    width: 100%;
+  }
 }
 .progress i {
   font-size: 1rem;
@@ -188,12 +200,5 @@ export default {};
   }
 }
 
-@keyframes animate {
-  0%{
-    width: 0%;
-  }
-  100%{
-    width: 100%;
-  }
-}
+
 </style>
