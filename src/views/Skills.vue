@@ -18,7 +18,7 @@
         <span><i class="fab fa-html5"></i> Html5</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar html"
             role="progressbar"
             aria-valuemin="0"
             aria-valuemax="100"
@@ -30,7 +30,7 @@
         <span><i class="fab fa-css3-alt"></i> Css3</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar css"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -43,7 +43,7 @@
         <span><i class="fab fa-sass"></i>Scss</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar scss"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -56,7 +56,7 @@
         <span><i class="fab fa-bootstrap"></i> Bootstrap 4</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar bootstrap"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -69,7 +69,7 @@
         <span><i class="fab fa-js-square"></i> Javascript</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar js"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -82,7 +82,7 @@
         <span><i class="fab fa-audible"></i> jQuery</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar jquery"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -95,7 +95,7 @@
         <span><i class="fab fa-vuejs"></i> VueJS</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar vue"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -108,7 +108,7 @@
         <span><i class="fab fa-vuejs"></i> Vuex</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar vuex"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -121,7 +121,7 @@
         <span><i class="fab fa-github"></i> Git</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar git"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -134,7 +134,7 @@
         <span><i class="fas fa-database"></i> Firebase</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar firebase"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -147,7 +147,7 @@
         <span ><i class="fab fa-figma"></i> Figma(LOW)</span>
         <div class="progress mt-1 mb-4">
           <div
-            class="progress-bar"
+            class="progress-bar figma"
             role="progressbar"
             aria-valuenow="40"
             aria-valuemin="0"
@@ -167,13 +167,100 @@ export default {};
 </script>
 
 <style scoped>
-.progress-bar {
-  background-color: #ff7f50;
+.progress-bar.css {
+  background-color: #264DE4;
   color: black;
   height: 12px;
   animation: animate 0.5s linear ;
-  animation-delay: 0.6s;
+  animation-delay: 0.6s
+  
 }
+
+.progress-bar.html {
+  background-color: #DD4B25;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.bootstrap {
+  background-color: #8512F7;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.js {
+  background-color: #EFD81D;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.jquery {
+  background-color: #0865A6;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.scss {
+  background-color: #CD6799;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.vue {
+  background-color: #3FB27F;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.vuex {
+  background-color: #3FB27F;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.firebase {
+  background-color: #FFCB2B;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.git {
+  background-color: #E94E31;
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+.progress-bar.figma {
+  background: linear-gradient(90deg, rgba(25,182,246,1) 0%, rgba(10,201,127,1) 50%, rgba(247,110,95,1) 100%);
+  
+  color: black;
+  height: 12px;
+  animation: animate 0.5s linear ;
+  animation-delay: 0.6s
+  
+}
+
+
+
+
 @keyframes animate {
   0%{
     width: 0%;

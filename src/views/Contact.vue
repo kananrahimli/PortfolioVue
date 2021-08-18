@@ -41,7 +41,7 @@
             ></a>
           </div>
         </div>
-        <div
+        <form action=""
           class="
             col-md-8
             d-flex
@@ -83,7 +83,7 @@
           >
             Send
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </base-container>
