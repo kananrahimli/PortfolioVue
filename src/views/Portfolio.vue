@@ -99,6 +99,14 @@ export default {
             github:'https://github.com/kananrahimli/taraz',
             demo:'https://confident-goldwasser-cb6aab.netlify.app/'
         },
+         {
+          projectName: "Fire Blogs",
+          projectImg:'fireblogs',
+          projectContent:
+            "Html,scss,Bootsrap,Js,Vue.js,Vuex,Firebase",
+            github:'https://github.com/kananrahimli/FireBlogs',
+            demo:'https://fireblogs.netlify.app/'
+        },
       ],
     };
   },
