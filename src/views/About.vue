@@ -76,10 +76,15 @@ export default {
       ],
 
       experiences:[
+         {
+           company: "Artmood",
+          role: "Frontend Developer",
+          time:'03/09/2021'
+        },
         {
            company: "Labrin Tech",
           role: "Frontend Developer (Internship)",
-          time:'10/03/2021'
+          time:'01/05/2021--05/08/2021'
         },
         {
            company: "Freelancer,Self-employment",

@@ -107,6 +107,22 @@ export default {
             github:'https://github.com/kananrahimli/FireBlogs',
             demo:'https://fireblogs.netlify.app/'
         },
+        {
+          projectName: "Premiums",
+          projectImg:'premiums',
+          projectContent:
+            "Html,scss,Bootsrap,Js,jquery,",
+            // github:'https://github.com/kananrahimli/FireBlogs',
+            demo:'http://premiums.az/'
+        },
+        {
+          projectName: "Baku-Chaviar",
+          projectImg:'bakucaviar',
+          projectContent:
+            "Html,scss,Bootsrap,Js,jquery,Firebse-adminpanel",
+            // github:'https://github.com/kananrahimli/FireBlogs',
+            demo:'https://objective-yalow-ddcafd.netlify.app/'
+        },
       ],
     };
   },
