@@ -63,7 +63,7 @@ export default {
           projectName: "Corona statistic",
            projectImg:'corona',
           projectContent:
-            "Html,Css,Bootstrap,Js,Bootstrap,Axios",
+            "Html,Css,Bootstrap,Vue,Bootstrap,Axios",
             github:'https://github.com/kananrahimli/CovidApp-Vue.js-',
             demo:'https://infallible-bhabha-76a893.netlify.app'
         },
@@ -122,6 +122,14 @@ export default {
             "Html,scss,Bootsrap,Js,jquery,Firebse-adminpanel",
             // github:'https://github.com/kananrahimli/FireBlogs',
             demo:'https://objective-yalow-ddcafd.netlify.app/'
+        },
+        {
+          projectName: "Corona statistic(React)",
+           projectImg:'corona',
+          projectContent:
+            "Html,Css,Bootstrap,Bootstrap,Axios,React.js",
+            github:'https://github.com/kananrahimli/React-corona-app',
+            demo:'https://musing-visvesvaraya-342837.netlify.app/'
         },
       ],
     };
