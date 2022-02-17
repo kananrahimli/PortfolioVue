@@ -118,6 +118,32 @@
             <strong>85%</strong>
           </div>
         </div>
+        <span><i class="fa-solid fa-r"></i> ReactJS(Hooks,Context Api)</span>
+        <div class="progress mt-1 mb-4">
+          <div
+            class="progress-bar vue"
+            role="progressbar"
+            aria-valuenow="40"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 75%"
+          >
+            <strong>75%</strong>
+          </div>
+        </div>
+        <span><i class="fa-solid fa-r"></i> Redux</span>
+        <div class="progress mt-1 mb-4">
+          <div
+            class="progress-bar vuex"
+            role="progressbar"
+            aria-valuenow="40"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="width: 65%"
+          >
+            <strong>65%</strong>
+          </div>
+        </div>
         <span><i class="fab fa-github"></i> Git</span>
         <div class="progress mt-1 mb-4">
           <div

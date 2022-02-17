@@ -26,6 +26,70 @@ export default {
   data() {
     return {
       projects: [
+         {
+          projectName: "Zəfəran Aptek",
+           projectImg:'zeferan',
+          projectContent:
+            "Html,Css,Bootstrap,Axios,Jquery,Google map,Javascript",
+            // github:'https://github.com/kananrahimli/React-corona-app',
+            demo:'https://nostalgic-pike-028b68.netlify.app'
+        },
+         {
+          projectName: "Zoom Opticstore",
+           projectImg:'zoom',
+          projectContent:
+            "Html,Css,Bootstrap,Axios,Jquery,Google map,Javascript,Javascript Plugin",
+            // github:'https://github.com/kananrahimli/React-corona-app',
+            demo:'https://jolly-fermat-03ba6e.netlify.app'
+        },
+        {
+          projectName: "Cargoex",
+           projectImg:'cargoex',
+          projectContent:
+            "Html,Css,Bootstrap,Js,Vue.js",
+            github:'https://github.com/kananrahimli/cargoexx',
+            demo:'https://nostalgic-khorana-7c1d46.netlify.app/'
+        },
+        {
+          projectName: "Premiums",
+          projectImg:'premiums',
+          projectContent:
+            "Html,scss,Bootsrap,Js,jquery,",
+            // github:'https://github.com/kananrahimli/FireBlogs',
+            demo:'http://premiums.az/'
+        },
+        {
+          projectName: "Baku-Chaviar",
+          projectImg:'bakucaviar',
+          projectContent:
+            "Html,scss,Bootsrap,Js,jquery,Firebse-adminpanel",
+            // github:'https://github.com/kananrahimli/FireBlogs',
+            demo:'https://objective-yalow-ddcafd.netlify.app/'
+        },
+         {
+          projectName: "Fire Blogs",
+          projectImg:'fireblogs',
+          projectContent:
+            "Html,scss,Bootsrap,Js,Vue.js,Vuex,Firebase",
+            github:'https://github.com/kananrahimli/FireBlogs',
+            demo:'https://fireblogs.netlify.app/'
+        },
+         {
+          projectName: "Coach Finders",
+           projectImg:'coachFinder',
+          projectContent:
+            "Html,Css,Bootstrap,Vue.js,Vuex,Axios,Firebase,Authentication",
+            github:'https://github.com/kananrahimli/CocahFinder',
+            demo:'https://kind-brattain-b8b99e.netlify.app/'
+        },
+          {
+          projectName: "Corona statistic",
+           projectImg:'corona',
+          projectContent:
+            "Html,Css,Bootstrap,Vue,Bootstrap,Axios",
+            github:'https://github.com/kananrahimli/CovidApp-Vue.js-',
+            demo:'https://infallible-bhabha-76a893.netlify.app'
+        },
         {
           projectName: "Todo app",
            projectImg:'todo',
@@ -51,22 +115,8 @@ export default {
             github:'https://github.com/kananrahimli/Slider-app',
             demo:'https://competent-bose-90eaa5.netlify.app'
         },
-        {
-          projectName: "Coach Finders",
-           projectImg:'coachFinder',
-          projectContent:
-            "Html,Css,Bootstrap,Vue.js,Vuex,Axios,Firebase,Authentication",
-            github:'https://github.com/kananrahimli/CocahFinder',
-            demo:'https://kind-brattain-b8b99e.netlify.app/'
-        },
-        {
-          projectName: "Corona statistic",
-           projectImg:'corona',
-          projectContent:
-            "Html,Css,Bootstrap,Vue,Bootstrap,Axios",
-            github:'https://github.com/kananrahimli/CovidApp-Vue.js-',
-            demo:'https://infallible-bhabha-76a893.netlify.app'
-        },
+       
+      
         {
           projectName: "Monster Game",
            projectImg:'monster',
@@ -83,14 +133,7 @@ export default {
             github:'https://github.com/kananrahimli/FindCountry',
             demo:'https://agitated-pasteur-685043.netlify.app/'
         },
-        {
-          projectName: "Cargoex",
-           projectImg:'cargoex',
-          projectContent:
-            "Html,Css,Bootstrap,Js,Vue.js",
-            github:'https://github.com/kananrahimli/cargoexx',
-            demo:'https://nostalgic-khorana-7c1d46.netlify.app/'
-        },
+        
         {
           projectName: "Taraz",
           projectImg:'taraz',
@@ -99,38 +142,17 @@ export default {
             github:'https://github.com/kananrahimli/taraz',
             demo:'https://confident-goldwasser-cb6aab.netlify.app/'
         },
-         {
-          projectName: "Fire Blogs",
-          projectImg:'fireblogs',
-          projectContent:
-            "Html,scss,Bootsrap,Js,Vue.js,Vuex,Firebase",
-            github:'https://github.com/kananrahimli/FireBlogs',
-            demo:'https://fireblogs.netlify.app/'
-        },
-        {
-          projectName: "Premiums",
-          projectImg:'premiums',
-          projectContent:
-            "Html,scss,Bootsrap,Js,jquery,",
-            // github:'https://github.com/kananrahimli/FireBlogs',
-            demo:'http://premiums.az/'
-        },
-        {
-          projectName: "Baku-Chaviar",
-          projectImg:'bakucaviar',
-          projectContent:
-            "Html,scss,Bootsrap,Js,jquery,Firebse-adminpanel",
-            // github:'https://github.com/kananrahimli/FireBlogs',
-            demo:'https://objective-yalow-ddcafd.netlify.app/'
-        },
+        
+        
         {
           projectName: "Corona statistic(React)",
            projectImg:'corona',
           projectContent:
-            "Html,Css,Bootstrap,Bootstrap,Axios,React.js",
+            "Html,Css,Bootstrap,Axios,React.js",
             github:'https://github.com/kananrahimli/React-corona-app',
             demo:'https://musing-visvesvaraya-342837.netlify.app/'
         },
+        
       ],
     };
   },
