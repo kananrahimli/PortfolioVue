@@ -24,9 +24,9 @@ export default {
 <style scoped>
 
 .base-container {
-  margin-left: 13.63rem;
+  /* margin-left: 13.63rem; */
   height: 100vh;
-  width: 84%;
+  width: 100%;
   background: #fff;
   position: relative;
   padding: 1rem;
@@ -34,9 +34,9 @@ export default {
 }
 
 .base-container-2 {
-  margin-left: 13.63rem;
+  /* margin-left: 13.63rem; */
   height: 100vh;
-  width: 84%;
+  width: 100%;
   background: #eaeaea;
   position: relative;
   padding: 1rem;

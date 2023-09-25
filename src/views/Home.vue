@@ -1,5 +1,5 @@
 <template>
-  <div class="home row">
+  <div class="home row mx-0">
     <div class="image col-md-6 d-flex align-items-start">
       <img src="../assets/profile.jpg" alt="" />
     </div>
@@ -102,9 +102,9 @@ h2 span.cursor.typing{
   background-color: #ff7f50 !important;
 }
 .home {
-  margin-left: 13.63rem;
+  /* margin-left: 13.63rem; */
   background-image: url("../assets/background.jpg");
-  width: 84%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -128,7 +128,7 @@ img {
   width: 60%;
   margin-top: 1rem;
   margin-left: 1rem;
-  animation: image 60s infinite;
+  /* animation: image 60s infinite; */
 }
 @keyframes image {
   0% {

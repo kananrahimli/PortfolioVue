@@ -1,9 +1,9 @@
 <template>
   <base-container bgNoWhite>
     <base-title title="Portfolio" class="mb-2"></base-title>
-    <div id="portfolio" class="container ml-1 row justify-content-center">
+    <div id="portfolio" class="custom-container ml-1 row justify-content-center">
       <div
-        class="customCard pb-3 col-md-3 mx-3 my-5 d-flex flex-column"
+        class="customCard pb-3 col-md-2 mx-3 my-5 d-flex flex-column"
         v-for="(project, index) in projects"
         :key="index"
       >
@@ -201,59 +201,60 @@ button:hover {
 button:hover a {
   color: #fff;
 }
-.container {
+.custom-container {
   padding-top: 150px;
 }
 
-.container .customCard {
+.custom-container .customCard {
   height: 180px;
   background-color: #fff;
   border: 1px solid #ff7f50;
-  transition: 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-radius: 4px;
   box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 0.5);
   cursor: pointer;
 }
 
-.container .customCard:hover {
-  height: 320px;
+.custom-container .customCard:hover {
+  height: auto;
+  max-height: 500px;
 }
 
-.container .imgBox {
+.custom-container .imgBox {
   margin-top: -30px;
   min-height: 180px !important;
   min-width: 200px !important;
 }
 
-.container img {
+.custom-container img {
   border: 1px solid #ff7f50;
   border-radius: 6px;
   width: 100%;
   height: 100%;
 }
-.container .content {
+.custom-container .content {
   margin-top: -30px;
   visibility: hidden;
   transition: 0.3s ease-in-out;
   opacity: 0;
 }
-.container .customCard:hover .content {
+.custom-container .customCard:hover .content {
   margin-top: 10px;
   opacity: 1;
   visibility: visible;
   transition-delay: 0.2s;
 }
-.container .content p {
+.custom-container .content p {
   font-size: 12px;
 }
 @media screen and (max-width: 768px) {
-  .container .customCard {
+  .custom-container .customCard {
     height: 200px;
   }
-  .container .customCard:hover {
+  .custom-container .customCard:hover {
     height: auto;
   }
-  .container .imgBox {
+  .custom-container .imgBox {
     /* width: 240px !important; */
     margin-top: -30px;
     min-height: 200px;

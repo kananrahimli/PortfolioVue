@@ -4,7 +4,7 @@
 
     <div
       id="contact"
-      class="d-flex flex-column align-items-center py-3 px-0 container mb-4"
+      class="d-flex align-items-center  justify-content-center h-100 py-3 px-0 container mb-4 "
     >
       <div class="my-3">
         <base-title text1="Contact" text2="us"></base-title>

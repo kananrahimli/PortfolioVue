@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-100">
     <base-dialog v-if="menuBar" @closeBackdrop="close"></base-dialog>
     <button class="menubar" @click="openMenu">
       <i class="fas fa-bars "></i>
@@ -73,17 +73,15 @@ export default {
 <style scoped>
 nav {
   background-color: #2c3e50;
-  width: 220px !important;
+  /* width: 220px !important; */
+  width: 100%;
   height: 100%;
   /* overflow-y: scroll; */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 200;
+  
 }
 
 .navbar a {
@@ -187,6 +185,12 @@ button {
     position: fixed;
     left: -400px;
     transition: 0.5s;
+  }
+  .showMenu{
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
   }
 
   button {

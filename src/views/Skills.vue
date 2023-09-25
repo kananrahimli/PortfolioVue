@@ -2,7 +2,7 @@
   <base-container>
     <base-title title="Skills"></base-title>
 
-    <div class="row container pt-5 mt-5 ml-1">
+    <div class="row  pt-5 mt-5 ml-1 mr-0 ">
       <div
         class="col-md-6 d-flex justify-content-center flex-column "
         id="skillsTextContainer"
